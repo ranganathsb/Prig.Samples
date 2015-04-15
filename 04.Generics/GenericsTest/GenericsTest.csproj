@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F604B26F-5D7C-4769-8836-F4A4A6217E2A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GenericsTest</RootNamespace>
+    <AssemblyName>GenericsTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib.v4.0.30319.v4.0.0.0.AMD64.Prig" Condition="'$(Platform)|$(Prefer32Bit)' == 'AnyCPU|false'" />
+    <Reference Include="mscorlib.v4.0.30319.v4.0.0.0.x86.Prig" Condition="'$(Platform)|$(Prefer32Bit)' == 'AnyCPU|true'" />
+    <Reference Include="nunit.core">
+      <HintPath>..\packages\NUnitTestAdapterForPrig.1.2\lib\nunit.core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.core.interfaces">
+      <HintPath>..\packages\NUnitTestAdapterForPrig.1.2\lib\nunit.core.interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.util">
+      <HintPath>..\packages\NUnitTestAdapterForPrig.1.2\lib\nunit.util.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NUnit.VisualStudio.TestAdapter">
+      <HintPath>..\packages\NUnitTestAdapterForPrig.1.2\lib\NUnit.VisualStudio.TestAdapter.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UntestableLibrary.v4.0.30319.v1.0.0.0.MSIL.Prig" Condition="'$(Platform)|$(Prefer32Bit)' == 'AnyCPU|true'" />
+    <Reference Include="UntestableLibrary.v4.0.30319.v1.0.0.0.MSIL.Prig" Condition="'$(Platform)|$(Prefer32Bit)' == 'AnyCPU|false'" />
+    <Reference Include="Urasandesu.NAnonym, Version=0.2.0.0, Culture=neutral, PublicKeyToken=ce9e95b04334d5fb, processorArchitecture=MSIL" />
+    <Reference Include="Urasandesu.Prig.Framework, Version=0.1.0.0, Culture=neutral, PublicKeyToken=acabb3ef0ebf69ce, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LifeInfoTest.cs" />
+    <Compile Include="VillageTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Generics\Generics.csproj">
+      <Project>{0c4799a1-f640-480f-9f1a-8b6f1f748116}</Project>
+      <Name>Generics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UntestableLibrary\UntestableLibrary.csproj">
+      <Project>{80f1a1ae-6372-4c92-ae96-f0300f0ce98e}</Project>
+      <Name>UntestableLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mscorlib.v4.0.30319.v4.0.0.0.prig" />
+    <None Include="packages.config" />
+    <None Include="UntestableLibrary.v4.0.30319.v1.0.0.0.prig">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup Condition="'$(Platform)|$(Prefer32Bit)' == 'AnyCPU|false'">
+    <PreBuildEvent>cmd /c " "%VS120COMNTOOLS%VsDevCmd.bat" &amp; %windir%\SysNative\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -File "C:\ProgramData\chocolatey\lib\Prig\tools\Invoke-PilotStubber.ps1" -ReferenceFrom "@('C:\ProgramData\chocolatey\lib\Prig\lib\net40\Urasandesu.NAnonym.dll','C:\ProgramData\chocolatey\lib\Prig\lib\net40\Urasandesu.Prig.Framework.dll')" -AssemblyFrom "C:\Users\Akira\Prig.Samples.V2\04.Generics\UntestableLibrary\bin\Debug\UntestableLibrary.dll" -TargetFrameworkVersion v4.5.1 -KeyFile "C:\ProgramData\chocolatey\lib\Prig\tools\Urasandesu.Prig.snk" -OutputPath "$(TargetDir)." -Settings "$(ProjectDir)UntestableLibrary.v4.0.30319.v1.0.0.0.prig" "
+cmd /c " "%VS120COMNTOOLS%VsDevCmd.bat" &amp; %windir%\SysNative\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -File "C:\ProgramData\chocolatey\lib\Prig\tools\Invoke-PilotStubber.ps1" -ReferenceFrom "@('C:\ProgramData\chocolatey\lib\Prig\lib\net40\Urasandesu.NAnonym.dll','C:\ProgramData\chocolatey\lib\Prig\lib\net40\Urasandesu.Prig.Framework.dll')" -AssemblyFrom "C:\WINDOWS\Microsoft.Net\assembly\GAC_64\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll" -TargetFrameworkVersion v4.5.1 -KeyFile "C:\ProgramData\chocolatey\lib\Prig\tools\Urasandesu.Prig.snk" -OutputPath "$(TargetDir)." -Settings "$(ProjectDir)mscorlib.v4.0.30319.v4.0.0.0.prig" "</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)|$(Prefer32Bit)' == 'AnyCPU|true'">
+    <PreBuildEvent>cmd /c " "%VS120COMNTOOLS%VsDevCmd.bat" &amp; %windir%\system32\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -File "C:\ProgramData\chocolatey\lib\Prig\tools\Invoke-PilotStubber.ps1" -ReferenceFrom "@('C:\ProgramData\chocolatey\lib\Prig\lib\net40\Urasandesu.NAnonym.dll','C:\ProgramData\chocolatey\lib\Prig\lib\net40\Urasandesu.Prig.Framework.dll')" -AssemblyFrom "C:\Users\Akira\Prig.Samples.V2\04.Generics\UntestableLibrary\bin\Debug\UntestableLibrary.dll" -TargetFrameworkVersion v4.5.1 -KeyFile "C:\ProgramData\chocolatey\lib\Prig\tools\Urasandesu.Prig.snk" -OutputPath "$(TargetDir)." -Settings "$(ProjectDir)UntestableLibrary.v4.0.30319.v1.0.0.0.prig" "
+cmd /c " "%VS120COMNTOOLS%VsDevCmd.bat" &amp; %windir%\system32\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -File "C:\ProgramData\chocolatey\lib\Prig\tools\Invoke-PilotStubber.ps1" -ReferenceFrom "@('C:\ProgramData\chocolatey\lib\Prig\lib\net40\Urasandesu.NAnonym.dll','C:\ProgramData\chocolatey\lib\Prig\lib\net40\Urasandesu.Prig.Framework.dll')" -AssemblyFrom "C:\WINDOWS\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll" -TargetFrameworkVersion v4.5.1 -KeyFile "C:\ProgramData\chocolatey\lib\Prig\tools\Urasandesu.Prig.snk" -OutputPath "$(TargetDir)." -Settings "$(ProjectDir)mscorlib.v4.0.30319.v4.0.0.0.prig" "</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
