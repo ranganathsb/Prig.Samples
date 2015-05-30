@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+
+  <configSections>
+    <section name="prig" type="Urasandesu.Prig.Framework.PilotStubberConfiguration.PrigSection, Urasandesu.Prig.Framework" />
+  </configSections>
+
+  <prig>
+
+    <stubs>
+      <add name="Submit" alias="Submit">
+        <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
+          <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">Submit</Name>
+          <AssemblyName z:Id="3" z:Type="System.String" z:Assembly="0" xmlns="">StaticMockingMigration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+          <ClassName z:Id="4" z:Type="System.String" z:Assembly="0" xmlns="">StaticMockingMigration.Foo</ClassName>
+          <Signature z:Id="5" z:Type="System.String" z:Assembly="0" xmlns="">Void Submit()</Signature>
+          <Signature2 z:Id="6" z:Type="System.String" z:Assembly="0" xmlns="">System.Void Submit()</Signature2>
+          <MemberType z:Id="7" z:Type="System.Int32" z:Assembly="0" xmlns="">8</MemberType>
+          <GenericArguments i:nil="true" xmlns="" />
+        </RuntimeMethodInfo>
+      </add>
+
+      <add name="ExecuteInt32" alias="ExecuteInt32">
+        <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
+          <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">Execute</Name>
+          <AssemblyName z:Id="3" z:Type="System.String" z:Assembly="0" xmlns="">StaticMockingMigration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+          <ClassName z:Id="4" z:Type="System.String" z:Assembly="0" xmlns="">StaticMockingMigration.Foo</ClassName>
+          <Signature z:Id="5" z:Type="System.String" z:Assembly="0" xmlns="">Int32 Execute(Int32)</Signature>
+          <Signature2 z:Id="6" z:Type="System.String" z:Assembly="0" xmlns="">System.Int32 Execute(System.Int32)</Signature2>
+          <MemberType z:Id="7" z:Type="System.Int32" z:Assembly="0" xmlns="">8</MemberType>
+          <GenericArguments i:nil="true" xmlns="" />
+        </RuntimeMethodInfo>
+      </add>
+
+      <add name="FooPropGet" alias="FooPropGet">
+        <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
+          <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_FooProp</Name>
+          <AssemblyName z:Id="3" z:Type="System.String" z:Assembly="0" xmlns="">StaticMockingMigration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+          <ClassName z:Id="4" z:Type="System.String" z:Assembly="0" xmlns="">StaticMockingMigration.Foo</ClassName>
+          <Signature z:Id="5" z:Type="System.String" z:Assembly="0" xmlns="">Int32 get_FooProp()</Signature>
+          <Signature2 z:Id="6" z:Type="System.String" z:Assembly="0" xmlns="">System.Int32 get_FooProp()</Signature2>
+          <MemberType z:Id="7" z:Type="System.Int32" z:Assembly="0" xmlns="">8</MemberType>
+          <GenericArguments i:nil="true" xmlns="" />
+        </RuntimeMethodInfo>
+      </add>
+
+      <add name="FooPropSetInt32" alias="FooPropSetInt32">
+        <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
+          <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">set_FooProp</Name>
+          <AssemblyName z:Id="3" z:Type="System.String" z:Assembly="0" xmlns="">StaticMockingMigration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+          <ClassName z:Id="4" z:Type="System.String" z:Assembly="0" xmlns="">StaticMockingMigration.Foo</ClassName>
+          <Signature z:Id="5" z:Type="System.String" z:Assembly="0" xmlns="">Void set_FooProp(Int32)</Signature>
+          <Signature2 z:Id="6" z:Type="System.String" z:Assembly="0" xmlns="">System.Void set_FooProp(System.Int32)</Signature2>
+          <MemberType z:Id="7" z:Type="System.Int32" z:Assembly="0" xmlns="">8</MemberType>
+          <GenericArguments i:nil="true" xmlns="" />
+        </RuntimeMethodInfo>
+      </add>
+
+      <add name="StaticConstructor" alias="StaticConstructor">
+        <RuntimeConstructorInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
+          <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">.cctor</Name>
+          <AssemblyName z:Id="3" z:Type="System.String" z:Assembly="0" xmlns="">StaticMockingMigration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+          <ClassName z:Id="4" z:Type="System.String" z:Assembly="0" xmlns="">StaticMockingMigration.Foo</ClassName>
+          <Signature z:Id="5" z:Type="System.String" z:Assembly="0" xmlns="">Void .cctor()</Signature>
+          <Signature2 z:Id="6" z:Type="System.String" z:Assembly="0" xmlns="">.cctor()</Signature2>
+          <MemberType z:Id="7" z:Type="System.Int32" z:Assembly="0" xmlns="">1</MemberType>
+          <GenericArguments i:nil="true" xmlns="" />
+        </RuntimeConstructorInfo>
+      </add>
+
+      <add name="Constructor" alias="Constructor">
+        <RuntimeConstructorInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
+          <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">.ctor</Name>
+          <AssemblyName z:Id="3" z:Type="System.String" z:Assembly="0" xmlns="">StaticMockingMigration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+          <ClassName z:Id="4" z:Type="System.String" z:Assembly="0" xmlns="">StaticMockingMigration.Foo</ClassName>
+          <Signature z:Id="5" z:Type="System.String" z:Assembly="0" xmlns="">Void .ctor()</Signature>
+          <Signature2 z:Id="6" z:Type="System.String" z:Assembly="0" xmlns="">.ctor()</Signature2>
+          <MemberType z:Id="7" z:Type="System.Int32" z:Assembly="0" xmlns="">1</MemberType>
+          <GenericArguments i:nil="true" xmlns="" />
+        </RuntimeConstructorInfo>
+      </add>
+
+      <add name="DoIt" alias="DoIt">
+        <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
+          <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">DoIt</Name>
+          <AssemblyName z:Id="3" z:Type="System.String" z:Assembly="0" xmlns="">StaticMockingMigration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+          <ClassName z:Id="4" z:Type="System.String" z:Assembly="0" xmlns="">StaticMockingMigration.FooInternal</ClassName>
+          <Signature z:Id="5" z:Type="System.String" z:Assembly="0" xmlns="">Void DoIt()</Signature>
+          <Signature2 z:Id="6" z:Type="System.String" z:Assembly="0" xmlns="">System.Void DoIt()</Signature2>
+          <MemberType z:Id="7" z:Type="System.Int32" z:Assembly="0" xmlns="">8</MemberType>
+          <GenericArguments i:nil="true" xmlns="" />
+        </RuntimeMethodInfo>
+      </add>
+
+      <add name="Constructor" alias="Constructor">
+        <RuntimeConstructorInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
+          <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">.ctor</Name>
+          <AssemblyName z:Id="3" z:Type="System.String" z:Assembly="0" xmlns="">StaticMockingMigration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+          <ClassName z:Id="4" z:Type="System.String" z:Assembly="0" xmlns="">StaticMockingMigration.FooInternal</ClassName>
+          <Signature z:Id="5" z:Type="System.String" z:Assembly="0" xmlns="">Void .ctor()</Signature>
+          <Signature2 z:Id="6" z:Type="System.String" z:Assembly="0" xmlns="">.ctor()</Signature2>
+          <MemberType z:Id="7" z:Type="System.Int32" z:Assembly="0" xmlns="">1</MemberType>
+          <GenericArguments i:nil="true" xmlns="" />
+        </RuntimeConstructorInfo>
+      </add>
+
+      <add name="Do" alias="Do">
+        <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
+          <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">Do</Name>
+          <AssemblyName z:Id="3" z:Type="System.String" z:Assembly="0" xmlns="">StaticMockingMigration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+          <ClassName z:Id="4" z:Type="System.String" z:Assembly="0" xmlns="">StaticMockingMigration.FooStatic</ClassName>
+          <Signature z:Id="5" z:Type="System.String" z:Assembly="0" xmlns="">Void Do()</Signature>
+          <Signature2 z:Id="6" z:Type="System.String" z:Assembly="0" xmlns="">System.Void Do()</Signature2>
+          <MemberType z:Id="7" z:Type="System.Int32" z:Assembly="0" xmlns="">8</MemberType>
+          <GenericArguments i:nil="true" xmlns="" />
+        </RuntimeMethodInfo>
+      </add>
+
+    </stubs>
+
+  </prig>
+
+</configuration>

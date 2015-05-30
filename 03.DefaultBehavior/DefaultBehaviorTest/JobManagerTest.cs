@@ -3,6 +3,7 @@ using DefaultBehavior.Prig;
 using Moq;
 using NUnit.Framework;
 using System.Prig;
+using Urasandesu.Prig.Delegates;
 using Urasandesu.Prig.Framework;
 
 namespace DefaultBehaviorTest

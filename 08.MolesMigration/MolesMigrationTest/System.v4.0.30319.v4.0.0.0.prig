@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+
+  <configSections>
+    <section name="prig" type="Urasandesu.Prig.Framework.PilotStubberConfiguration.PrigSection, Urasandesu.Prig.Framework" />
+  </configSections>
+
+  <prig>
+
+    <stubs>
+      <add name="DownloadStringString" alias="DownloadStringString">
+        <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
+          <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">DownloadString</Name>
+          <AssemblyName z:Id="3" z:Type="System.String" z:Assembly="0" xmlns="">System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</AssemblyName>
+          <ClassName z:Id="4" z:Type="System.String" z:Assembly="0" xmlns="">System.Net.WebClient</ClassName>
+          <Signature z:Id="5" z:Type="System.String" z:Assembly="0" xmlns="">System.String DownloadString(System.String)</Signature>
+          <Signature2 z:Id="6" z:Type="System.String" z:Assembly="0" xmlns="">System.String DownloadString(System.String)</Signature2>
+          <MemberType z:Id="7" z:Type="System.Int32" z:Assembly="0" xmlns="">8</MemberType>
+          <GenericArguments i:nil="true" xmlns="" />
+        </RuntimeMethodInfo>
+      </add>
+
+      <add name="DownloadStringUri" alias="DownloadStringUri">
+        <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
+          <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">DownloadString</Name>
+          <AssemblyName z:Id="3" z:Type="System.String" z:Assembly="0" xmlns="">System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</AssemblyName>
+          <ClassName z:Id="4" z:Type="System.String" z:Assembly="0" xmlns="">System.Net.WebClient</ClassName>
+          <Signature z:Id="5" z:Type="System.String" z:Assembly="0" xmlns="">System.String DownloadString(System.Uri)</Signature>
+          <Signature2 z:Id="6" z:Type="System.String" z:Assembly="0" xmlns="">System.String DownloadString(System.Uri)</Signature2>
+          <MemberType z:Id="7" z:Type="System.Int32" z:Assembly="0" xmlns="">8</MemberType>
+          <GenericArguments i:nil="true" xmlns="" />
+        </RuntimeMethodInfo>
+      </add>
+
+      <add name="AddDownloadStringCompletedDownloadStringCompletedEventHandler" alias="AddDownloadStringCompletedDownloadStringCompletedEventHandler">
+        <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
+          <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">add_DownloadStringCompleted</Name>
+          <AssemblyName z:Id="3" z:Type="System.String" z:Assembly="0" xmlns="">System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</AssemblyName>
+          <ClassName z:Id="4" z:Type="System.String" z:Assembly="0" xmlns="">System.Net.WebClient</ClassName>
+          <Signature z:Id="5" z:Type="System.String" z:Assembly="0" xmlns="">Void add_DownloadStringCompleted(System.Net.DownloadStringCompletedEventHandler)</Signature>
+          <Signature2 z:Id="6" z:Type="System.String" z:Assembly="0" xmlns="">System.Void add_DownloadStringCompleted(System.Net.DownloadStringCompletedEventHandler)</Signature2>
+          <MemberType z:Id="7" z:Type="System.Int32" z:Assembly="0" xmlns="">8</MemberType>
+          <GenericArguments i:nil="true" xmlns="" />
+        </RuntimeMethodInfo>
+      </add>
+
+      <add name="RemoveDownloadStringCompletedDownloadStringCompletedEventHandler" alias="RemoveDownloadStringCompletedDownloadStringCompletedEventHandler">
+        <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
+          <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">remove_DownloadStringCompleted</Name>
+          <AssemblyName z:Id="3" z:Type="System.String" z:Assembly="0" xmlns="">System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</AssemblyName>
+          <ClassName z:Id="4" z:Type="System.String" z:Assembly="0" xmlns="">System.Net.WebClient</ClassName>
+          <Signature z:Id="5" z:Type="System.String" z:Assembly="0" xmlns="">Void remove_DownloadStringCompleted(System.Net.DownloadStringCompletedEventHandler)</Signature>
+          <Signature2 z:Id="6" z:Type="System.String" z:Assembly="0" xmlns="">System.Void remove_DownloadStringCompleted(System.Net.DownloadStringCompletedEventHandler)</Signature2>
+          <MemberType z:Id="7" z:Type="System.Int32" z:Assembly="0" xmlns="">8</MemberType>
+          <GenericArguments i:nil="true" xmlns="" />
+        </RuntimeMethodInfo>
+      </add>
+
+      <add name="OnDownloadStringCompletedDownloadStringCompletedEventArgs" alias="OnDownloadStringCompletedDownloadStringCompletedEventArgs">
+        <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
+          <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">OnDownloadStringCompleted</Name>
+          <AssemblyName z:Id="3" z:Type="System.String" z:Assembly="0" xmlns="">System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</AssemblyName>
+          <ClassName z:Id="4" z:Type="System.String" z:Assembly="0" xmlns="">System.Net.WebClient</ClassName>
+          <Signature z:Id="5" z:Type="System.String" z:Assembly="0" xmlns="">Void OnDownloadStringCompleted(System.Net.DownloadStringCompletedEventArgs)</Signature>
+          <Signature2 z:Id="6" z:Type="System.String" z:Assembly="0" xmlns="">System.Void OnDownloadStringCompleted(System.Net.DownloadStringCompletedEventArgs)</Signature2>
+          <MemberType z:Id="7" z:Type="System.Int32" z:Assembly="0" xmlns="">8</MemberType>
+          <GenericArguments i:nil="true" xmlns="" />
+        </RuntimeMethodInfo>
+      </add>
+
+      <add name="DownloadStringAsyncUri" alias="DownloadStringAsyncUri">
+        <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
+          <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">DownloadStringAsync</Name>
+          <AssemblyName z:Id="3" z:Type="System.String" z:Assembly="0" xmlns="">System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</AssemblyName>
+          <ClassName z:Id="4" z:Type="System.String" z:Assembly="0" xmlns="">System.Net.WebClient</ClassName>
+          <Signature z:Id="5" z:Type="System.String" z:Assembly="0" xmlns="">Void DownloadStringAsync(System.Uri)</Signature>
+          <Signature2 z:Id="6" z:Type="System.String" z:Assembly="0" xmlns="">System.Void DownloadStringAsync(System.Uri)</Signature2>
+          <MemberType z:Id="7" z:Type="System.Int32" z:Assembly="0" xmlns="">8</MemberType>
+          <GenericArguments i:nil="true" xmlns="" />
+        </RuntimeMethodInfo>
+      </add>
+
+      <add name="DownloadStringAsyncUriObject" alias="DownloadStringAsyncUriObject">
+        <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
+          <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">DownloadStringAsync</Name>
+          <AssemblyName z:Id="3" z:Type="System.String" z:Assembly="0" xmlns="">System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</AssemblyName>
+          <ClassName z:Id="4" z:Type="System.String" z:Assembly="0" xmlns="">System.Net.WebClient</ClassName>
+          <Signature z:Id="5" z:Type="System.String" z:Assembly="0" xmlns="">Void DownloadStringAsync(System.Uri, System.Object)</Signature>
+          <Signature2 z:Id="6" z:Type="System.String" z:Assembly="0" xmlns="">System.Void DownloadStringAsync(System.Uri, System.Object)</Signature2>
+          <MemberType z:Id="7" z:Type="System.Int32" z:Assembly="0" xmlns="">8</MemberType>
+          <GenericArguments i:nil="true" xmlns="" />
+        </RuntimeMethodInfo>
+      </add>
+
+      <add name="DownloadStringTaskAsyncString" alias="DownloadStringTaskAsyncString">
+        <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
+          <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">DownloadStringTaskAsync</Name>
+          <AssemblyName z:Id="3" z:Type="System.String" z:Assembly="0" xmlns="">System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</AssemblyName>
+          <ClassName z:Id="4" z:Type="System.String" z:Assembly="0" xmlns="">System.Net.WebClient</ClassName>
+          <Signature z:Id="5" z:Type="System.String" z:Assembly="0" xmlns="">System.Threading.Tasks.Task`1[System.String] DownloadStringTaskAsync(System.String)</Signature>
+          <Signature2 z:Id="6" z:Type="System.String" z:Assembly="0" xmlns="">System.Threading.Tasks.Task`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] DownloadStringTaskAsync(System.String)</Signature2>
+          <MemberType z:Id="7" z:Type="System.Int32" z:Assembly="0" xmlns="">8</MemberType>
+          <GenericArguments i:nil="true" xmlns="" />
+        </RuntimeMethodInfo>
+      </add>
+
+      <add name="DownloadStringTaskAsyncUri" alias="DownloadStringTaskAsyncUri">
+        <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
+          <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">DownloadStringTaskAsync</Name>
+          <AssemblyName z:Id="3" z:Type="System.String" z:Assembly="0" xmlns="">System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</AssemblyName>
+          <ClassName z:Id="4" z:Type="System.String" z:Assembly="0" xmlns="">System.Net.WebClient</ClassName>
+          <Signature z:Id="5" z:Type="System.String" z:Assembly="0" xmlns="">System.Threading.Tasks.Task`1[System.String] DownloadStringTaskAsync(System.Uri)</Signature>
+          <Signature2 z:Id="6" z:Type="System.String" z:Assembly="0" xmlns="">System.Threading.Tasks.Task`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] DownloadStringTaskAsync(System.Uri)</Signature2>
+          <MemberType z:Id="7" z:Type="System.Int32" z:Assembly="0" xmlns="">8</MemberType>
+          <GenericArguments i:nil="true" xmlns="" />
+        </RuntimeMethodInfo>
+      </add>
+
+      <add name="DownloadStringOperationCompletedObject" alias="DownloadStringOperationCompletedObject">
+        <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
+          <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">DownloadStringOperationCompleted</Name>
+          <AssemblyName z:Id="3" z:Type="System.String" z:Assembly="0" xmlns="">System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</AssemblyName>
+          <ClassName z:Id="4" z:Type="System.String" z:Assembly="0" xmlns="">System.Net.WebClient</ClassName>
+          <Signature z:Id="5" z:Type="System.String" z:Assembly="0" xmlns="">Void DownloadStringOperationCompleted(System.Object)</Signature>
+          <Signature2 z:Id="6" z:Type="System.String" z:Assembly="0" xmlns="">System.Void DownloadStringOperationCompleted(System.Object)</Signature2>
+          <MemberType z:Id="7" z:Type="System.Int32" z:Assembly="0" xmlns="">8</MemberType>
+          <GenericArguments i:nil="true" xmlns="" />
+        </RuntimeMethodInfo>
+      </add>
+
+      <add name="DownloadStringAsyncCallbackByteArrayExceptionObject" alias="DownloadStringAsyncCallbackByteArrayExceptionObject">
+        <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
+          <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">DownloadStringAsyncCallback</Name>
+          <AssemblyName z:Id="3" z:Type="System.String" z:Assembly="0" xmlns="">System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</AssemblyName>
+          <ClassName z:Id="4" z:Type="System.String" z:Assembly="0" xmlns="">System.Net.WebClient</ClassName>
+          <Signature z:Id="5" z:Type="System.String" z:Assembly="0" xmlns="">Void DownloadStringAsyncCallback(Byte[], System.Exception, System.Object)</Signature>
+          <Signature2 z:Id="6" z:Type="System.String" z:Assembly="0" xmlns="">System.Void DownloadStringAsyncCallback(System.Byte[], System.Exception, System.Object)</Signature2>
+          <MemberType z:Id="7" z:Type="System.Int32" z:Assembly="0" xmlns="">8</MemberType>
+          <GenericArguments i:nil="true" xmlns="" />
+        </RuntimeMethodInfo>
+      </add>
+
+      <add name="ResultGet" alias="ResultGet">
+        <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
+          <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_Result</Name>
+          <AssemblyName z:Id="3" z:Type="System.String" z:Assembly="0" xmlns="">System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</AssemblyName>
+          <ClassName z:Id="4" z:Type="System.String" z:Assembly="0" xmlns="">System.Net.DownloadStringCompletedEventArgs</ClassName>
+          <Signature z:Id="5" z:Type="System.String" z:Assembly="0" xmlns="">System.String get_Result()</Signature>
+          <Signature2 z:Id="6" z:Type="System.String" z:Assembly="0" xmlns="">System.String get_Result()</Signature2>
+          <MemberType z:Id="7" z:Type="System.Int32" z:Assembly="0" xmlns="">8</MemberType>
+          <GenericArguments i:nil="true" xmlns="" />
+        </RuntimeMethodInfo>
+      </add>
+
+    </stubs>
+
+  </prig>
+
+</configuration>

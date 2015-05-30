@@ -7,6 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfilersChain", "Profilers
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfilersChainTest", "ProfilersChainTest\ProfilersChainTest.csproj", "{E428B6CF-2F64-4632-9235-146F80B8ECA3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E151BE68-A839-4FBB-8770-CBC9598033B6}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UntestableLibrary", "UntestableLibrary\UntestableLibrary.csproj", "{18E5A9E4-FA1A-4DAE-B752-EC736FAFC9EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +28,10 @@ Global
 		{E428B6CF-2F64-4632-9235-146F80B8ECA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E428B6CF-2F64-4632-9235-146F80B8ECA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E428B6CF-2F64-4632-9235-146F80B8ECA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18E5A9E4-FA1A-4DAE-B752-EC736FAFC9EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18E5A9E4-FA1A-4DAE-B752-EC736FAFC9EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18E5A9E4-FA1A-4DAE-B752-EC736FAFC9EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18E5A9E4-FA1A-4DAE-B752-EC736FAFC9EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

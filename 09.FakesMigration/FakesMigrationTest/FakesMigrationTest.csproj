@@ -30,19 +30,90 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Moq, Version=4.2.1502.911, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.2.1502.0911\lib\net40\Moq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.core, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnitTestAdapterForPrig.2.0.0\lib\nunit.core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.core.interfaces, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnitTestAdapterForPrig.2.0.0\lib\nunit.core.interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.util, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnitTestAdapterForPrig.2.0.0\lib\nunit.util.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NUnit.VisualStudio.TestAdapter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4cb40d35494691ac, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnitTestAdapterForPrig.2.0.0\lib\NUnit.VisualStudio.TestAdapter.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.v4.0.30319.v4.0.0.0.MSIL.Prig" Condition="'$(Platform)|$(Prefer32Bit)' == 'AnyCPU|true'" />
+    <Reference Include="System.v4.0.30319.v4.0.0.0.MSIL.Prig" Condition="'$(Platform)|$(Prefer32Bit)' == 'AnyCPU|false'" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="Urasandesu.NAnonym, Version=0.2.0.0, Culture=neutral, PublicKeyToken=ce9e95b04334d5fb, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prig.2.0.0-alpha04\lib\Urasandesu.NAnonym.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Urasandesu.Prig.Delegates, Version=0.1.0.0, Culture=neutral, PublicKeyToken=acabb3ef0ebf69ce, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prig.2.0.0-alpha04\lib\Urasandesu.Prig.Delegates.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Urasandesu.Prig.Delegates.0404, Version=0.1.0.0, Culture=neutral, PublicKeyToken=acabb3ef0ebf69ce, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prig.2.0.0-alpha04\lib\Urasandesu.Prig.Delegates.0404.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Urasandesu.Prig.Delegates.0804, Version=0.1.0.0, Culture=neutral, PublicKeyToken=acabb3ef0ebf69ce, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prig.2.0.0-alpha04\lib\Urasandesu.Prig.Delegates.0804.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Urasandesu.Prig.Delegates.1205, Version=0.1.0.0, Culture=neutral, PublicKeyToken=acabb3ef0ebf69ce, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prig.2.0.0-alpha04\lib\Urasandesu.Prig.Delegates.1205.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Urasandesu.Prig.Framework, Version=0.1.0.0, Culture=neutral, PublicKeyToken=acabb3ef0ebf69ce, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prig.2.0.0-alpha04\lib\Urasandesu.Prig.Framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebServiceClientTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FakesMigration\FakesMigration.csproj">
+      <Project>{0c77cdf0-d4d7-4a20-955f-43c57803cd79}</Project>
+      <Name>FakesMigration</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="System.v4.0.30319.v4.0.0.0.prig" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="BeforeRebuild">
+    <Exec Condition="'$(Platform)|$(Prefer32Bit)' == 'AnyCPU|true'" Command="cmd /c &quot; &quot;%VS120COMNTOOLS%VsDevCmd.bat&quot; &amp; %windir%\system32\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -File &quot;C:\ProgramData\chocolatey\lib\Prig\tools\Invoke-PilotStubber.ps1&quot; -ReferenceFrom &quot;@('C:\ProgramData\chocolatey\lib\Prig\lib\Urasandesu.NAnonym.dll','C:\ProgramData\chocolatey\lib\Prig\lib\Urasandesu.Prig.Framework.dll')&quot; -AssemblyFrom &quot;C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll&quot; -TargetFrameworkVersion v4.5.1 -KeyFile &quot;C:\ProgramData\chocolatey\lib\Prig\tools\Urasandesu.Prig.snk&quot; -OutputPath &quot;$(TargetDir).&quot; -Settings &quot;$(ProjectDir)System.v4.0.30319.v4.0.0.0.prig&quot; -BuildTarget BeforeRebuild &quot;" />
+    <Exec Condition="'$(Platform)|$(Prefer32Bit)' == 'AnyCPU|false'" Command="cmd /c &quot; &quot;%VS120COMNTOOLS%VsDevCmd.bat&quot; &amp; %windir%\SysNative\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -File &quot;C:\ProgramData\chocolatey\lib\Prig\tools\Invoke-PilotStubber.ps1&quot; -ReferenceFrom &quot;@('C:\ProgramData\chocolatey\lib\Prig\lib\Urasandesu.NAnonym.dll','C:\ProgramData\chocolatey\lib\Prig\lib\Urasandesu.Prig.Framework.dll')&quot; -AssemblyFrom &quot;C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll&quot; -TargetFrameworkVersion v4.5.1 -KeyFile &quot;C:\ProgramData\chocolatey\lib\Prig\tools\Urasandesu.Prig.snk&quot; -OutputPath &quot;$(TargetDir).&quot; -Settings &quot;$(ProjectDir)System.v4.0.30319.v4.0.0.0.prig&quot; -BuildTarget BeforeRebuild &quot;" />
+  </Target>
+  <Target Name="BeforeBuild">
+    <Exec Condition="'$(Platform)|$(Prefer32Bit)' == 'AnyCPU|true'" Command="cmd /c &quot; &quot;%VS120COMNTOOLS%VsDevCmd.bat&quot; &amp; %windir%\system32\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -File &quot;C:\ProgramData\chocolatey\lib\Prig\tools\Invoke-PilotStubber.ps1&quot; -ReferenceFrom &quot;@('C:\ProgramData\chocolatey\lib\Prig\lib\Urasandesu.NAnonym.dll','C:\ProgramData\chocolatey\lib\Prig\lib\Urasandesu.Prig.Framework.dll')&quot; -AssemblyFrom &quot;C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll&quot; -TargetFrameworkVersion v4.5.1 -KeyFile &quot;C:\ProgramData\chocolatey\lib\Prig\tools\Urasandesu.Prig.snk&quot; -OutputPath &quot;$(TargetDir).&quot; -Settings &quot;$(ProjectDir)System.v4.0.30319.v4.0.0.0.prig&quot; -BuildTarget BeforeBuild &quot;" />
+    <Exec Condition="'$(Platform)|$(Prefer32Bit)' == 'AnyCPU|false'" Command="cmd /c &quot; &quot;%VS120COMNTOOLS%VsDevCmd.bat&quot; &amp; %windir%\SysNative\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -File &quot;C:\ProgramData\chocolatey\lib\Prig\tools\Invoke-PilotStubber.ps1&quot; -ReferenceFrom &quot;@('C:\ProgramData\chocolatey\lib\Prig\lib\Urasandesu.NAnonym.dll','C:\ProgramData\chocolatey\lib\Prig\lib\Urasandesu.Prig.Framework.dll')&quot; -AssemblyFrom &quot;C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll&quot; -TargetFrameworkVersion v4.5.1 -KeyFile &quot;C:\ProgramData\chocolatey\lib\Prig\tools\Urasandesu.Prig.snk&quot; -OutputPath &quot;$(TargetDir).&quot; -Settings &quot;$(ProjectDir)System.v4.0.30319.v4.0.0.0.prig&quot; -BuildTarget BeforeBuild &quot;" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
