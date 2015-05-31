@@ -6,7 +6,7 @@ namespace StaticMockingMigration
     {
         static Foo()
         {
-            //throw new NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public static void Submit()
@@ -44,6 +44,22 @@ namespace StaticMockingMigration
         public static void Do()
         {
             throw new NotImplementedException();
+        }
+    }
+
+    public class Bar
+    {
+        public void Execute()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public static class BarExtensions
+    {
+        public static int Echo(this Bar foo, int arg)
+        {
+            return default(int);
         }
     }
 }

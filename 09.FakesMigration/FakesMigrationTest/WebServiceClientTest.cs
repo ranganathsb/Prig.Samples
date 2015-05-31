@@ -1,5 +1,5 @@
 ﻿using FakesMigration;
-using FakesMigrationTest.FakesMigrationDemoTestDetail;
+using FakesMigrationTest.FakesMigrationTestDetail;
 using Moq;
 using NUnit.Framework;
 using System;
@@ -125,7 +125,7 @@ namespace FakesMigrationTest
         }
     }
 
-    namespace FakesMigrationDemoTestDetail
+    namespace FakesMigrationTestDetail
     {
         // The type annotation that specifies to Moq tends to be intrusive because it is based on a delegate.
         // If you make a extension method like the below for example, it is available that the compiler infers the type.

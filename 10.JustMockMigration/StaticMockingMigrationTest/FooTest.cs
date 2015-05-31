@@ -1,13 +1,10 @@
-﻿using NUnit.Framework;
+﻿using Moq;
+using NUnit.Framework;
 using StaticMockingMigration;
 using StaticMockingMigration.Prig;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web;
 using System.Web.Prig;
+using Urasandesu.Prig.Delegates;
 using Urasandesu.Prig.Framework;
 
 namespace StaticMockingMigrationTest
@@ -24,8 +21,10 @@ namespace StaticMockingMigrationTest
                 PFoo.StaticConstructor().Body = () => { };
                 PFoo.FooPropGet().Body = () => 0;
 
+
                 // Act
                 var actual = Foo.FooProp;
+
 
                 // Assert
                 Assert.AreEqual(0, actual);
@@ -35,17 +34,44 @@ namespace StaticMockingMigrationTest
 
 
         [Test]
+        public void Prig_should_throw_when_not_arranged()
+        {
+            using (new IndirectionsContext())
+            {
+                // Arrange
+                PFoo.StaticConstructor().Body = () => { };
+
+                var executeMock = new Mock<IndirectionFunc<int, int>>(MockBehavior.Strict);
+                executeMock.Setup(_ => _(10)).Returns(10);
+                PFoo.ExecuteInt32().Body = executeMock.Object;
+
+                var submitMock = new Mock<IndirectionAction>(MockBehavior.Strict);
+                PFoo.Submit().Body = submitMock.Object;
+
+
+                // Act, Assert
+                Assert.AreEqual(10, Foo.Execute(10));
+                Assert.Throws<MockException>(() => Foo.Submit());
+            }
+        }
+
+        
+        
+        [Test]
         public void Prig_should_fake_static_property_get()
         {
             using (new IndirectionsContext())
             {
                 // Arrange
-                var called = false;
                 PFoo.StaticConstructor().Body = () => { };
+
+                var called = false;
                 PFoo.FooPropGet().Body = () => { called = true; return 1; };
+
 
                 // Act
                 var actual = Foo.FooProp;
+
 
                 // Assert
                 Assert.AreEqual(1, actual);
@@ -61,15 +87,15 @@ namespace StaticMockingMigrationTest
             using (new IndirectionsContext())
             {
                 // Arrange
-                var called = false;
                 PFoo.StaticConstructor().Body = () => { };
-                PFoo.FooPropSetInt32().Body = value => called = true;
 
-                // Act - this line should not throw any mockexception.
+                var fooPropSetMock = new Mock<IndirectionAction<int>>(MockBehavior.Strict);
+                fooPropSetMock.Setup(_ => _(10));
+                PFoo.FooPropSetInt32().Body = fooPropSetMock.Object;
+
+
+                // Act, Assert
                 Foo.FooProp = 10;
-
-                // Assert
-                Assert.IsTrue(called);
             }
         }
         
@@ -81,14 +107,11 @@ namespace StaticMockingMigrationTest
             using (new IndirectionsContext())
             {
                 // Arrange
-                var called = false;
-                PFooInternal.DoIt().Body = () => called = true;
+                PFooInternal.DoIt().Body = () => { };
 
-                // Act
-                FooInternal.DoIt();
 
-                // Assert
-                Assert.IsTrue(called);
+                // Act, Assert
+                Assert.DoesNotThrow(() => FooInternal.DoIt());
             }
         }
 
@@ -100,14 +123,11 @@ namespace StaticMockingMigrationTest
             using (new IndirectionsContext())
             {
                 // Arrange
-                var called = false;
-                PFooStatic.Do().Body = () => called = true;
+                PFooStatic.Do().Body = () => { };
 
-                // Act - doesn't throw MockException
-                FooStatic.Do();
 
-                // Assert
-                Assert.IsTrue(called);
+                // Act, Assert
+                Assert.DoesNotThrow(() => FooStatic.Do());
             }
         }
 
@@ -122,11 +142,37 @@ namespace StaticMockingMigrationTest
                 var called = false;
                 PHttpContext.CurrentGet().Body = () => { called = true; return null; };
 
+
                 // Act
                 var ret = HttpContext.Current;
 
+
                 // Assert
                 Assert.IsTrue(called);
+            }
+        }
+
+
+
+        [Test]
+        public void Prig_should_fake_extension_method()
+        {
+            using (new IndirectionsContext())
+            {
+                // Arrange
+                var foo = new Bar();
+
+                var echoMock = new Mock<IndirectionFunc<Bar, int, int>>();
+                echoMock.Setup(_ => _(foo, 10)).Returns(11);
+                PBarExtensions.EchoBarInt32().Body = echoMock.Object;
+
+
+                // Act
+                var actual = foo.Echo(10);
+
+
+                // Assert
+                Assert.AreEqual(11, actual);
             }
         }
     }

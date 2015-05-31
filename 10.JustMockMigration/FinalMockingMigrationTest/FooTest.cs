@@ -17,12 +17,8 @@ namespace FinalMockingMigrationTest
             using (new IndirectionsContext())
             {
                 // Arrange
-                var echoInt32 = new Mock<IndirectionFunc<Foo, int, int>>();
-                echoInt32.Setup(_ => _(It.IsAny<Foo>(), It.IsAny<int>())).Returns(10);
-
                 var fooProxy = new PProxyFoo();
-                fooProxy.EchoInt32().Body = echoInt32.Object;
-
+                fooProxy.EchoInt32().Body = (@this, arg1) => 10;
                 var foo = (Foo)fooProxy;
 
 
@@ -32,7 +28,6 @@ namespace FinalMockingMigrationTest
 
                 // Assert
                 Assert.AreEqual(10, actual);
-                echoInt32.Verify(_ => _(It.IsAny<Foo>(), 1), Times.Once());
             }
         }
 
@@ -42,12 +37,8 @@ namespace FinalMockingMigrationTest
             using (new IndirectionsContext())
             {
                 // Arrange
-                var fooPropGet = new Mock<IndirectionFunc<Foo, string>>();
-                fooPropGet.Setup(_ => _(It.IsAny<Foo>())).Returns("bar");
-
                 var fooProxy = new PProxyFoo();
-                fooProxy.FooPropGet().Body = fooPropGet.Object;
-
+                fooProxy.FooPropGet().Body = @this => "bar";
                 var foo = (Foo)fooProxy;
 
 
@@ -57,7 +48,6 @@ namespace FinalMockingMigrationTest
 
                 // Assert
                 Assert.AreEqual("bar", actual);
-                fooPropGet.Verify(_ => _(It.IsAny<Foo>()), Times.Once());
             }
         }
 
@@ -68,21 +58,15 @@ namespace FinalMockingMigrationTest
             using (new IndirectionsContext())
             {
                 // Arrange
-                var fooPropSetString = new Mock<IndirectionAction<Foo, string>>();
-                fooPropSetString.Setup(_ => _(It.IsAny<Foo>(), It.Is<string>(s => s != "ping"))).Throws(new NotImplementedException());
-
                 var fooProxy = new PProxyFoo();
-                fooProxy.FooPropSetString().Body = fooPropSetString.Object;
-
+                var fooPropSetMock = new Mock<IndirectionAction<Foo, string>>(MockBehavior.Strict);
+                fooPropSetMock.Setup(_ => _(fooProxy, "ping"));
+                fooProxy.FooPropSetString().Body = fooPropSetMock.Object;
                 var foo = (Foo)fooProxy;
 
 
-                // Act
+                // Act, Assert
                 foo.FooProp = "foo";
-
-
-                // Assert
-                Assert.Fail("We shouldn't get here!!");
             }
         }
 
@@ -92,24 +76,13 @@ namespace FinalMockingMigrationTest
             using (new IndirectionsContext())
             {
                 // Arrange
-                var executeInt32 = new Mock<IndirectionFunc<Foo, int, int>>();
-                executeInt32.Setup(_ => _(It.IsAny<Foo>(), It.IsAny<int>())).Returns<Foo, int>((@this, arg1) => arg1);
-
-                var executeInt32Int32 = new Mock<IndirectionFunc<Foo, int, int, int>>();
-                executeInt32Int32.Setup(_ => _(It.IsAny<Foo>(), It.IsAny<int>(), It.IsAny<int>())).Returns<Foo, int, int>((@this, arg1, arg2) => arg1 + arg2);
-
                 var fooProxy = new PProxyFoo();
-                fooProxy.ExecuteInt32().Body = executeInt32.Object;
-                fooProxy.ExecuteInt32Int32().Body = executeInt32Int32.Object;
-
+                fooProxy.ExecuteInt32().Body = (@this, arg1) => arg1;
+                fooProxy.ExecuteInt32Int32().Body = (@this, arg1, arg2) => arg1 + arg2;
                 var foo = (Foo)fooProxy;
 
 
-                // Act
-                // nop
-
-
-                // Assert
+                // Act, Assert
                 Assert.AreEqual(1, foo.Execute(1));
                 Assert.AreEqual(2, foo.Execute(1, 1));
             }
@@ -123,16 +96,9 @@ namespace FinalMockingMigrationTest
                 // Arrange
                 var handler = default(Foo.EchoEventHandler);
 
-                var addOnEchoCallbackFooEchoEventHandler = new Mock<IndirectionAction<Foo, Foo.EchoEventHandler>>();
-                addOnEchoCallbackFooEchoEventHandler.Setup(_ => _(It.IsAny<Foo>(), It.IsAny<Foo.EchoEventHandler>())).Callback<Foo, Foo.EchoEventHandler>((@this, value) => handler += value);
-
-                var echoInt32 = new Mock<IndirectionFunc<Foo, int, int>>();
-                echoInt32.Setup(_ => _(It.IsAny<Foo>(), It.IsAny<int>())).Callback<Foo, int>((@this, arg1) => handler(true));
-
-
                 var fooProxy = new PProxyFoo();
-                fooProxy.AddOnEchoCallbackFooEchoEventHandler().Body = addOnEchoCallbackFooEchoEventHandler.Object;
-                fooProxy.EchoInt32().Body = echoInt32.Object;
+                fooProxy.AddOnEchoCallbackFooEchoEventHandler().Body = (@this, value) => handler += value;
+                fooProxy.EchoInt32().Body = (@this, arg1) => { handler(true); return arg1; };
 
                 var foo = (Foo)fooProxy;
 
@@ -143,7 +109,7 @@ namespace FinalMockingMigrationTest
                 // Act
                 foo.Echo(10);
 
-                
+
                 // Assert
                 Assert.IsTrue(called);
             }
@@ -157,12 +123,8 @@ namespace FinalMockingMigrationTest
                 // Arrange
                 var expected = "ping";
 
-                var echoOfTOfTRetT = new Mock<IndirectionFunc<FooGeneric, string, string>>();
-                echoOfTOfTRetT.Setup(_ => _(It.IsAny<FooGeneric>(), expected)).Returns<FooGeneric, string>((@this, s) => s);
-
-
                 var fooGenericProxy = new PProxyFooGeneric();
-                fooGenericProxy.EchoOfTOfTRetT<string, string>().Body = echoOfTOfTRetT.Object;
+                fooGenericProxy.EchoOfTOfTRetT<string, string>().Body = (@this, s) => s;
 
                 var fooGeneric = (FooGeneric)fooGenericProxy;
 

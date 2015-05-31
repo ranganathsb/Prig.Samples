@@ -8,7 +8,7 @@ namespace CallingOriginal
     {
         public Village()
         {
-            var r = new Random(DateTime.Now.Second);
+            var r = new Random(DateTime.Now.Second);    // !?!?!?!?!?!?
             var count = r.Next(100);
             for (int i = 0; i < count; i++)
                 m_ricePaddies.Add(new RicePaddy(i, r));

@@ -39,6 +39,7 @@ namespace Generics
             return m_shortestRoutesMap[start][end];
         }
 
+        // We will get the shortest path between the begin RicePaddy and the end RicePaddy by Dijkstra's algorithm.
         Dictionary<RicePaddy, Route> CalculateShortestRoutes(RicePaddy start)
         {
             var shortestRoutes = new Dictionary<RicePaddy, Route>();
