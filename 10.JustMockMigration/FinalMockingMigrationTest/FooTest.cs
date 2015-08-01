@@ -52,7 +52,7 @@ namespace FinalMockingMigrationTest
         }
 
         [Test]
-        [ExpectedException(typeof(NotImplementedException))]
+        [ExpectedException(typeof(MockException))]
         public void Prig_should_assert_property_set()
         {
             using (new IndirectionsContext())
