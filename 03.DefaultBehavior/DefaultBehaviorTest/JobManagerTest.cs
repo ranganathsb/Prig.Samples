@@ -22,6 +22,8 @@ namespace DefaultBehaviorTest
                     ExcludeGeneric().
                     // Environment.CurrentManagedThreadId is used by Mock<T>.Setup<TResult>(Expression<Func<T, TResult>>).
                     Exclude(PEnvironment.CurrentManagedThreadIdGet()).
+                    // Environment.OSVersion is used by Times.Once().
+                    Exclude(PEnvironment.OSVersionGet()).
                     DefaultBehavior = IndirectionBehaviors.NotImplemented;
 
                 var mockCtx = new Mock<CommunicationContext>();
