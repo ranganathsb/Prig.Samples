@@ -63,27 +63,27 @@
     <Reference Include="UntestableLibrary.v4.0.30319.v1.0.0.0.MSIL.Prig" Condition="'$(Platform)|$(Prefer32Bit)' == 'AnyCPU|true'" />
     <Reference Include="UntestableLibrary.v4.0.30319.v1.0.0.0.MSIL.Prig" Condition="'$(Platform)|$(Prefer32Bit)' == 'AnyCPU|false'" />
     <Reference Include="Urasandesu.NAnonym, Version=0.2.0.0, Culture=neutral, PublicKeyToken=ce9e95b04334d5fb, processorArchitecture=MSIL">
-      <HintPath>..\packages\Prig.2.0.0-alpha06\lib\Urasandesu.NAnonym.dll</HintPath>
+      <HintPath>..\packages\Prig.2.0.0\lib\Urasandesu.NAnonym.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Urasandesu.Prig.Delegates, Version=0.1.0.0, Culture=neutral, PublicKeyToken=acabb3ef0ebf69ce, processorArchitecture=MSIL">
-      <HintPath>..\packages\Prig.2.0.0-alpha06\lib\Urasandesu.Prig.Delegates.dll</HintPath>
+      <HintPath>..\packages\Prig.2.0.0\lib\Urasandesu.Prig.Delegates.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Urasandesu.Prig.Delegates.0404, Version=0.1.0.0, Culture=neutral, PublicKeyToken=acabb3ef0ebf69ce, processorArchitecture=MSIL">
-      <HintPath>..\packages\Prig.2.0.0-alpha06\lib\Urasandesu.Prig.Delegates.0404.dll</HintPath>
+      <HintPath>..\packages\Prig.2.0.0\lib\Urasandesu.Prig.Delegates.0404.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Urasandesu.Prig.Delegates.0804, Version=0.1.0.0, Culture=neutral, PublicKeyToken=acabb3ef0ebf69ce, processorArchitecture=MSIL">
-      <HintPath>..\packages\Prig.2.0.0-alpha06\lib\Urasandesu.Prig.Delegates.0804.dll</HintPath>
+      <HintPath>..\packages\Prig.2.0.0\lib\Urasandesu.Prig.Delegates.0804.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Urasandesu.Prig.Delegates.1205, Version=0.1.0.0, Culture=neutral, PublicKeyToken=acabb3ef0ebf69ce, processorArchitecture=MSIL">
-      <HintPath>..\packages\Prig.2.0.0-alpha06\lib\Urasandesu.Prig.Delegates.1205.dll</HintPath>
+      <HintPath>..\packages\Prig.2.0.0\lib\Urasandesu.Prig.Delegates.1205.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Urasandesu.Prig.Framework, Version=0.1.0.0, Culture=neutral, PublicKeyToken=acabb3ef0ebf69ce, processorArchitecture=MSIL">
-      <HintPath>..\packages\Prig.2.0.0-alpha06\lib\Urasandesu.Prig.Framework.dll</HintPath>
+      <HintPath>..\packages\Prig.2.0.0\lib\Urasandesu.Prig.Framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -105,7 +105,9 @@
   <ItemGroup>
     <None Include="mscorlib.v4.0.30319.v4.0.0.0.prig" />
     <None Include="packages.config" />
-    <None Include="UntestableLibrary.v4.0.30319.v1.0.0.0.prig" />
+    <None Include="UntestableLibrary.v4.0.30319.v1.0.0.0.prig">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />

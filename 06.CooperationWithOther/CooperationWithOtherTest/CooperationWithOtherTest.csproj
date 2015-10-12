@@ -76,27 +76,27 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Urasandesu.NAnonym, Version=0.2.0.0, Culture=neutral, PublicKeyToken=ce9e95b04334d5fb, processorArchitecture=MSIL">
-      <HintPath>..\packages\Prig.2.0.0-alpha06\lib\Urasandesu.NAnonym.dll</HintPath>
+      <HintPath>..\packages\Prig.2.0.0\lib\Urasandesu.NAnonym.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Urasandesu.Prig.Delegates, Version=0.1.0.0, Culture=neutral, PublicKeyToken=acabb3ef0ebf69ce, processorArchitecture=MSIL">
-      <HintPath>..\packages\Prig.2.0.0-alpha06\lib\Urasandesu.Prig.Delegates.dll</HintPath>
+      <HintPath>..\packages\Prig.2.0.0\lib\Urasandesu.Prig.Delegates.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Urasandesu.Prig.Delegates.0404, Version=0.1.0.0, Culture=neutral, PublicKeyToken=acabb3ef0ebf69ce, processorArchitecture=MSIL">
-      <HintPath>..\packages\Prig.2.0.0-alpha06\lib\Urasandesu.Prig.Delegates.0404.dll</HintPath>
+      <HintPath>..\packages\Prig.2.0.0\lib\Urasandesu.Prig.Delegates.0404.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Urasandesu.Prig.Delegates.0804, Version=0.1.0.0, Culture=neutral, PublicKeyToken=acabb3ef0ebf69ce, processorArchitecture=MSIL">
-      <HintPath>..\packages\Prig.2.0.0-alpha06\lib\Urasandesu.Prig.Delegates.0804.dll</HintPath>
+      <HintPath>..\packages\Prig.2.0.0\lib\Urasandesu.Prig.Delegates.0804.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Urasandesu.Prig.Delegates.1205, Version=0.1.0.0, Culture=neutral, PublicKeyToken=acabb3ef0ebf69ce, processorArchitecture=MSIL">
-      <HintPath>..\packages\Prig.2.0.0-alpha06\lib\Urasandesu.Prig.Delegates.1205.dll</HintPath>
+      <HintPath>..\packages\Prig.2.0.0\lib\Urasandesu.Prig.Delegates.1205.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Urasandesu.Prig.Framework, Version=0.1.0.0, Culture=neutral, PublicKeyToken=acabb3ef0ebf69ce, processorArchitecture=MSIL">
-      <HintPath>..\packages\Prig.2.0.0-alpha06\lib\Urasandesu.Prig.Framework.dll</HintPath>
+      <HintPath>..\packages\Prig.2.0.0\lib\Urasandesu.Prig.Framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
