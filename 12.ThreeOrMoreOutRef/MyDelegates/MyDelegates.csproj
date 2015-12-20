@@ -38,7 +38,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Urasandesu.Prig.Framework">
-      <HintPath>..\..\..\..\..\ProgramData\chocolatey\lib\Prig\lib\Urasandesu.Prig.Framework.dll</HintPath>
+      <HintPath>$(ALLUSERSPROFILE)\chocolatey\lib\Prig\lib\Urasandesu.Prig.Framework.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
