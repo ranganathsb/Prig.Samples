@@ -5,7 +5,7 @@ $env:URASANDESU_PRIG_CURRENT_DIRECTORY = (Resolve-Path .\ProfilersChainTest\bin\
 $env:URASANDESU_PRIG_TARGET_PROCESS_NAME = "nunit-agent"
 
 # Run tests with OpenCover.
-& (Resolve-Path .\packages\OpenCover.*\OpenCover.Console.exe).Path -target:runtests.bat -filter:+[ProfilersChain]*
+& (Resolve-Path .\packages\OpenCover.*\OpenCover.Console.exe).Path -target:runtests.bat -filter:+[ProfilersChain]* -register:user
 
 # Format the result by ReportGenerator.
 & (Resolve-Path .\packages\ReportGenerator.*\tools\ReportGenerator.exe).Path -reports:results.xml -targetdir:coverage
