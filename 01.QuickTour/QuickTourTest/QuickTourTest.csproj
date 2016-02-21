@@ -60,27 +60,27 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Urasandesu.NAnonym">
-      <HintPath>..\packages\Prig.2.1.1\lib\Urasandesu.NAnonym.dll</HintPath>
+      <HintPath>..\packages\Prig.2.2.0\lib\Urasandesu.NAnonym.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Urasandesu.Prig.Delegates">
-      <HintPath>..\packages\Prig.2.1.1\lib\Urasandesu.Prig.Delegates.dll</HintPath>
+      <HintPath>..\packages\Prig.2.2.0\lib\Urasandesu.Prig.Delegates.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Urasandesu.Prig.Delegates.0404">
-      <HintPath>..\packages\Prig.2.1.1\lib\Urasandesu.Prig.Delegates.0404.dll</HintPath>
+      <HintPath>..\packages\Prig.2.2.0\lib\Urasandesu.Prig.Delegates.0404.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Urasandesu.Prig.Delegates.0804">
-      <HintPath>..\packages\Prig.2.1.1\lib\Urasandesu.Prig.Delegates.0804.dll</HintPath>
+      <HintPath>..\packages\Prig.2.2.0\lib\Urasandesu.Prig.Delegates.0804.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Urasandesu.Prig.Delegates.1205">
-      <HintPath>..\packages\Prig.2.1.1\lib\Urasandesu.Prig.Delegates.1205.dll</HintPath>
+      <HintPath>..\packages\Prig.2.2.0\lib\Urasandesu.Prig.Delegates.1205.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Urasandesu.Prig.Framework">
-      <HintPath>..\packages\Prig.2.1.1\lib\Urasandesu.Prig.Framework.dll</HintPath>
+      <HintPath>..\packages\Prig.2.2.0\lib\Urasandesu.Prig.Framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
