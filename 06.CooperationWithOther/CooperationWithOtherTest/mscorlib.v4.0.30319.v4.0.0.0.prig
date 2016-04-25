@@ -8,6 +8,13 @@
   <prig>
 
     <stubs>
+      <!-- 
+          PRandom.Sample().Body = 
+              @this => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="Sample" alias="Sample">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">Sample</Name>
@@ -20,6 +27,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PRandom.InternalSample().Body = 
+              @this => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="InternalSample" alias="InternalSample">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">InternalSample</Name>
@@ -32,6 +46,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PRandom.Next().Body = 
+              @this => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="Next" alias="Next">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">Next</Name>
@@ -44,6 +65,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PRandom.NextInt32Int32().Body = 
+              (@this, minValue, maxValue) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="NextInt32Int32" alias="NextInt32Int32">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">Next</Name>
@@ -56,6 +84,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PRandom.NextInt32().Body = 
+              (@this, maxValue) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="NextInt32" alias="NextInt32">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">Next</Name>
@@ -68,6 +103,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PRandom.NextDouble().Body = 
+              @this => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="NextDouble" alias="NextDouble">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">NextDouble</Name>
@@ -80,6 +122,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PRandom.NextBytesByteArray().Body = 
+              (@this, buffer) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="NextBytesByteArray" alias="NextBytesByteArray">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">NextBytes</Name>
@@ -92,6 +141,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PRandom.GetSampleForLargeRange().Body = 
+              @this => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="GetSampleForLargeRange" alias="GetSampleForLargeRange">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">GetSampleForLargeRange</Name>
@@ -104,6 +160,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PRandom.Constructor().Body = 
+              @this => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="Constructor" alias="Constructor">
         <RuntimeConstructorInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">.ctor</Name>
@@ -116,6 +179,13 @@
         </RuntimeConstructorInfo>
       </add>
 
+      <!-- 
+          PRandom.ConstructorInt32().Body = 
+              (@this, Seed) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="ConstructorInt32" alias="ConstructorInt32">
         <RuntimeConstructorInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">.ctor</Name>
@@ -129,7 +199,6 @@
       </add>
 
     </stubs>
-
   </prig>
 
 </configuration>

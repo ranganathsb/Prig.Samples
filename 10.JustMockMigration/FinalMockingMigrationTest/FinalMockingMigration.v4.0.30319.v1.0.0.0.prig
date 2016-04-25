@@ -8,6 +8,13 @@
   <prig>
 
     <stubs>
+      <!-- 
+          PFoo.ExecuteInt32Int32().Body = 
+              (@this, arg1, arg2) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="ExecuteInt32Int32" alias="ExecuteInt32Int32">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">Execute</Name>
@@ -20,6 +27,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PFoo.ExecuteInt32().Body = 
+              (@this, arg1) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="ExecuteInt32" alias="ExecuteInt32">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">Execute</Name>
@@ -32,6 +46,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PFoo.EchoInt32().Body = 
+              (@this, arg1) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="EchoInt32" alias="EchoInt32">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">Echo</Name>
@@ -44,6 +65,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PFoo.FooPropGet().Body = 
+              @this => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="FooPropGet" alias="FooPropGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_FooProp</Name>
@@ -56,6 +84,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PFoo.FooPropSetString().Body = 
+              (@this, value) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="FooPropSetString" alias="FooPropSetString">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">set_FooProp</Name>
@@ -68,6 +103,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PFoo.AddOnEchoCallbackFooEchoEventHandler().Body = 
+              (@this, value) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="AddOnEchoCallbackFooEchoEventHandler" alias="AddOnEchoCallbackFooEchoEventHandler">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">add_OnEchoCallback</Name>
@@ -80,6 +122,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PFoo.RemoveOnEchoCallbackFooEchoEventHandler().Body = 
+              (@this, value) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="RemoveOnEchoCallbackFooEchoEventHandler" alias="RemoveOnEchoCallbackFooEchoEventHandler">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">remove_OnEchoCallback</Name>
@@ -92,6 +141,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PFoo.Constructor().Body = 
+              @this => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="Constructor" alias="Constructor">
         <RuntimeConstructorInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">.ctor</Name>
@@ -104,6 +160,13 @@
         </RuntimeConstructorInfo>
       </add>
 
+      <!-- 
+          PFooEchoEventHandler.InvokeBoolean().Body = 
+              (@this, echoed) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="InvokeBoolean" alias="InvokeBoolean">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">Invoke</Name>
@@ -116,6 +179,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PFooEchoEventHandler.BeginInvokeBooleanAsyncCallbackObject().Body = 
+              (@this, echoed, callback, object) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="BeginInvokeBooleanAsyncCallbackObject" alias="BeginInvokeBooleanAsyncCallbackObject">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">BeginInvoke</Name>
@@ -128,6 +198,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PFooEchoEventHandler.EndInvokeIAsyncResult().Body = 
+              (@this, result) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="EndInvokeIAsyncResult" alias="EndInvokeIAsyncResult">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">EndInvoke</Name>
@@ -140,6 +217,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PFooEchoEventHandler.ConstructorObjectIntPtr().Body = 
+              (@this, object, method) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="ConstructorObjectIntPtr" alias="ConstructorObjectIntPtr">
         <RuntimeConstructorInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">.ctor</Name>
@@ -152,6 +236,13 @@
         </RuntimeConstructorInfo>
       </add>
 
+      <!-- 
+          PFooGeneric.EchoOfTOfTRetT<T, TRet>().Body = 
+              (@this, arg1) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="EchoOfTOfTRetT" alias="EchoOfTOfTRetT">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">Echo</Name>
@@ -164,6 +255,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PFooGeneric.Constructor().Body = 
+              @this => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="Constructor" alias="Constructor">
         <RuntimeConstructorInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">.ctor</Name>
@@ -177,7 +275,6 @@
       </add>
 
     </stubs>
-
   </prig>
 
 </configuration>

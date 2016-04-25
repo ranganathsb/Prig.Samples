@@ -8,6 +8,13 @@
   <prig>
 
     <stubs>
+      <!-- 
+          PWebClient.DownloadStringString().Body = 
+              (@this, address) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="DownloadStringString" alias="DownloadStringString">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">DownloadString</Name>
@@ -20,6 +27,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PWebClient.DownloadStringUri().Body = 
+              (@this, address) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="DownloadStringUri" alias="DownloadStringUri">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">DownloadString</Name>
@@ -32,6 +46,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PWebClient.AddDownloadStringCompletedDownloadStringCompletedEventHandler().Body = 
+              (@this, value) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="AddDownloadStringCompletedDownloadStringCompletedEventHandler" alias="AddDownloadStringCompletedDownloadStringCompletedEventHandler">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">add_DownloadStringCompleted</Name>
@@ -44,6 +65,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PWebClient.RemoveDownloadStringCompletedDownloadStringCompletedEventHandler().Body = 
+              (@this, value) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="RemoveDownloadStringCompletedDownloadStringCompletedEventHandler" alias="RemoveDownloadStringCompletedDownloadStringCompletedEventHandler">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">remove_DownloadStringCompleted</Name>
@@ -56,6 +84,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PWebClient.OnDownloadStringCompletedDownloadStringCompletedEventArgs().Body = 
+              (@this, e) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="OnDownloadStringCompletedDownloadStringCompletedEventArgs" alias="OnDownloadStringCompletedDownloadStringCompletedEventArgs">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">OnDownloadStringCompleted</Name>
@@ -68,6 +103,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PWebClient.DownloadStringAsyncUri().Body = 
+              (@this, address) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="DownloadStringAsyncUri" alias="DownloadStringAsyncUri">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">DownloadStringAsync</Name>
@@ -80,6 +122,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PWebClient.DownloadStringAsyncUriObject().Body = 
+              (@this, address, userToken) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="DownloadStringAsyncUriObject" alias="DownloadStringAsyncUriObject">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">DownloadStringAsync</Name>
@@ -92,6 +141,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PWebClient.DownloadStringTaskAsyncString().Body = 
+              (@this, address) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="DownloadStringTaskAsyncString" alias="DownloadStringTaskAsyncString">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">DownloadStringTaskAsync</Name>
@@ -104,6 +160,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PWebClient.DownloadStringTaskAsyncUri().Body = 
+              (@this, address) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="DownloadStringTaskAsyncUri" alias="DownloadStringTaskAsyncUri">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">DownloadStringTaskAsync</Name>
@@ -116,6 +179,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PWebClient.DownloadStringOperationCompletedObject().Body = 
+              (@this, arg) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="DownloadStringOperationCompletedObject" alias="DownloadStringOperationCompletedObject">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">DownloadStringOperationCompleted</Name>
@@ -128,6 +198,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PWebClient.DownloadStringAsyncCallbackByteArrayExceptionObject().Body = 
+              (@this, returnBytes, exception, state) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="DownloadStringAsyncCallbackByteArrayExceptionObject" alias="DownloadStringAsyncCallbackByteArrayExceptionObject">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">DownloadStringAsyncCallback</Name>
@@ -140,6 +217,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PDownloadStringCompletedEventArgs.ResultGet().Body = 
+              @this => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="ResultGet" alias="ResultGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_Result</Name>
@@ -153,7 +237,6 @@
       </add>
 
     </stubs>
-
   </prig>
 
 </configuration>

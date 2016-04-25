@@ -8,6 +8,13 @@
   <prig>
 
     <stubs>
+      <!-- 
+          PFooSealed.EchoInt32().Body = 
+              (@this, arg1) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="EchoInt32" alias="EchoInt32">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">Echo</Name>
@@ -20,6 +27,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PFooSealed.Constructor().Body = 
+              @this => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="Constructor" alias="Constructor">
         <RuntimeConstructorInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">.ctor</Name>
@@ -32,6 +46,13 @@
         </RuntimeConstructorInfo>
       </add>
 
+      <!-- 
+          PFooSealedInternal.EchoInt32().Body = 
+              (@this, arg1) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="EchoInt32" alias="EchoInt32">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">Echo</Name>
@@ -44,6 +65,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PFooSealedInternal.Constructor().Body = 
+              @this => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="Constructor" alias="Constructor">
         <RuntimeConstructorInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">.ctor</Name>
@@ -56,6 +84,13 @@
         </RuntimeConstructorInfo>
       </add>
 
+      <!-- 
+          PFoo.Execute().Body = 
+              @this => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="Execute" alias="Execute">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">Execute</Name>
@@ -68,6 +103,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PFoo.SealedMockingMigrationIFooExecuteInt32().Body = 
+              (@this, arg1) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="SealedMockingMigrationIFooExecuteInt32" alias="SealedMockingMigrationIFooExecuteInt32">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">SealedMockingMigration.IFoo.Execute</Name>
@@ -80,6 +122,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PFoo.Constructor().Body = 
+              @this => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="Constructor" alias="Constructor">
         <RuntimeConstructorInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">.ctor</Name>
@@ -93,7 +142,6 @@
       </add>
 
     </stubs>
-
   </prig>
 
 </configuration>

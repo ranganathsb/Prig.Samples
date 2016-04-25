@@ -1,19 +1,16 @@
 ﻿using FakesMigration;
-using FakesMigrationTest.FakesMigrationTestDetail;
 using Moq;
 using NUnit.Framework;
-using System;
-using System.Linq.Expressions;
 using System.Net;
 using System.Net.Prig;
-using System.Reflection;
-using Urasandesu.Prig.Delegates;
+using Urasandesu.Moq.Prig;
+using Urasandesu.Moq.Prig.Mixins.Urasandesu.Prig.Framework;
 using Urasandesu.Prig.Framework;
 
 namespace FakesMigrationTest
 {
     [TestFixture]
-    public class WebServiceClientTest
+    public class WebServiceClientTest : TestBase
     {
         [Test]
         public void TestThatServiceReturnsAForbiddenStatuscode()
@@ -52,15 +49,16 @@ namespace FakesMigrationTest
 
 
 
-        // **APPENDIX**: This example is corrected my personal unacceptable part by Moq:
+        // **APPENDIX**: This example is corrected my personal unacceptable part by Moq.Prig:
         [Test]
         public void CallWebService_should_return_false_if_HttpStatusCode_is_Forbidden()
         {
             using (new IndirectionsContext())
             {
                 // Arrange 
-                var requestProxy = new PProxyHttpWebRequest();
+                var ms = new MockStorage(MockBehavior.Strict);
 
+                var requestProxy = new PProxyHttpWebRequest();
                 requestProxy.ExcludeGeneric().DefaultBehavior = IndirectionBehaviors.DefaultValue;
 
                 var responseProxy = new PProxyHttpWebResponse();
@@ -71,21 +69,17 @@ namespace FakesMigrationTest
                 // For example, the original test will pass even if you unintendedly changed the original production code as follows: 
                 // var request = CreateWebRequest(url);
                 //   -> var request = CreateWebRequest("Foo");
-                var webRequestMock = new Mock<IndirectionFunc<string, WebRequest>>();
-                webRequestMock.Setup(_ => _(It.IsAny<string>())).Returns(requestProxy);
-                PWebRequest.CreateString().Body = webRequestMock.Object;
-
-                var client = new WebServiceClient();
                 var url = "testService";
+                PWebRequest.CreateString().BodyBy(ms).Expect(_ => _(url)).Returns(requestProxy);
 
 
                 // Act 
-                var actual = client.CallWebService(url);
+                var actual = new WebServiceClient().CallWebService(url);
 
 
                 // Assert
                 Assert.IsFalse(actual);
-                webRequestMock.Verify(_ => _(url), Times.Once());
+                ms.Verify();
             }
         }
 
@@ -95,47 +89,30 @@ namespace FakesMigrationTest
             using (new IndirectionsContext())
             {
                 // Arrange 
+                var ms = new MockStorage(MockBehavior.Strict);
+
                 // And also, you can verify whether HttpWebRequest is set intendedly if you use Moq.
                 var requestProxy = new PProxyHttpWebRequest();
-
-                var mocks = new MockRepository(MockBehavior.Default);
-                mocks.Create(requestProxy.ContentTypeSetString(), _ => _.Body).Setup(_ => _(requestProxy, "text/xml;charset=\"utf-8\""));
-                mocks.Create(requestProxy.MethodSetString(), _ => _.Body).Setup(_ => _(requestProxy, "GET"));
-                mocks.Create(requestProxy.TimeoutSetInt32(), _ => _.Body).Setup(_ => _(requestProxy, 1000));
-                mocks.Create(requestProxy.CredentialsSetICredentials(), _ => _.Body).Setup(_ => _(requestProxy, CredentialCache.DefaultNetworkCredentials));
+                requestProxy.ContentTypeSetString().BodyBy(ms).Expect(_ => _(requestProxy, "text/xml;charset=\"utf-8\""));
+                requestProxy.MethodSetString().BodyBy(ms).Expect(_ => _(requestProxy, "GET"));
+                requestProxy.TimeoutSetInt32().BodyBy(ms).Expect(_ => _(requestProxy, 1000));
+                requestProxy.CredentialsSetICredentials().BodyBy(ms).Expect(_ => _(requestProxy, CredentialCache.DefaultNetworkCredentials));
 
                 var responseProxy = new PProxyHttpWebResponse();
                 responseProxy.StatusCodeGet().Body = @this => HttpStatusCode.OK;
                 requestProxy.GetResponse().Body = @this => responseProxy;
 
-                PWebRequest.CreateString().Body = @this => requestProxy;
-
-                var client = new WebServiceClient();
                 var url = "testService";
+                PWebRequest.CreateString().Body = @this => requestProxy;
 
 
                 // Act 
-                var actual = client.CallWebService(url);
+                var actual = new WebServiceClient().CallWebService(url);
 
 
                 // Assert
                 Assert.IsTrue(actual);
-                mocks.VerifyAll();
-            }
-        }
-    }
-
-    namespace FakesMigrationTestDetail
-    {
-        // The type annotation that specifies to Moq tends to be intrusive because it is based on a delegate.
-        // If you make a extension method like the below for example, it is available that the compiler infers the type.
-        public static class MockRepositoryMixin
-        {
-            public static Mock<TMock> Create<TZZ, TMock>(this MockRepository repo, TZZ zz, Expression<Func<TZZ, TMock>> indirection) where TMock : class
-            {
-                var mock = repo.Create<TMock>();
-                ((PropertyInfo)((MemberExpression)indirection.Body).Member).SetValue(zz, mock.Object);
-                return mock;
+                ms.Verify();
             }
         }
     }
