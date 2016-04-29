@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
-  
+
   <configSections>
     <section name="prig" type="Urasandesu.Prig.Framework.PilotStubberConfiguration.PrigSection, Urasandesu.Prig.Framework" />
   </configSections>
@@ -8,6 +8,13 @@
   <prig>
 
     <stubs>
+      <!-- 
+          PRandom.ConstructorInt32().Body = 
+              (@this, Seed) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="ConstructorInt32" alias="ConstructorInt32">
         <RuntimeConstructorInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">.ctor</Name>
@@ -20,6 +27,13 @@
         </RuntimeConstructorInfo>
       </add>
 
+      <!-- 
+          PRandom.Next().Body = 
+              @this => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="Next" alias="Next">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">Next</Name>
@@ -32,6 +46,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PNullable<T>.ConstructorT().Body = 
+              (ref System.Nullable<T> @this, T value) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="ConstructorT" alias="ConstructorT">
         <RuntimeConstructorInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">.ctor</Name>
@@ -45,7 +66,6 @@
       </add>
 
     </stubs>
-    
   </prig>
 
 </configuration>

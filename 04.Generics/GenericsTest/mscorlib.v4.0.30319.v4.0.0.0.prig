@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
-  
+
   <configSections>
     <section name="prig" type="Urasandesu.Prig.Framework.PilotStubberConfiguration.PrigSection, Urasandesu.Prig.Framework" />
   </configSections>
@@ -8,6 +8,13 @@
   <prig>
 
     <stubs>
+      <!-- 
+          PRandom.NextInt32().Body = 
+              (@this, maxValue) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="NextInt32" alias="NextInt32">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">Next</Name>
@@ -20,6 +27,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PList<T>.AddT().Body = 
+              (@this, item) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="AddT" alias="AddT">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">Add</Name>
@@ -32,6 +46,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PDateTime.TodayGet().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="TodayGet" alias="TodayGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_Today</Name>
@@ -45,7 +66,6 @@
       </add>
 
     </stubs>
-    
   </prig>
 
 </configuration>

@@ -8,6 +8,13 @@
   <prig>
 
     <stubs>
+      <!-- 
+          PEnvironment.TickCountGet().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="TickCountGet" alias="TickCountGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_TickCount</Name>
@@ -20,6 +27,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.ExitCodeGet().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="ExitCodeGet" alias="ExitCodeGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_ExitCode</Name>
@@ -32,6 +46,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.ExitCodeSetInt32().Body = 
+              value => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="ExitCodeSetInt32" alias="ExitCodeSetInt32">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">set_ExitCode</Name>
@@ -44,6 +65,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.CommandLineGet().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="CommandLineGet" alias="CommandLineGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_CommandLine</Name>
@@ -56,6 +84,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.CurrentDirectoryGet().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="CurrentDirectoryGet" alias="CurrentDirectoryGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_CurrentDirectory</Name>
@@ -68,6 +103,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.CurrentDirectorySetString().Body = 
+              value => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="CurrentDirectorySetString" alias="CurrentDirectorySetString">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">set_CurrentDirectory</Name>
@@ -80,6 +122,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.SystemDirectoryGet().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="SystemDirectoryGet" alias="SystemDirectoryGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_SystemDirectory</Name>
@@ -92,6 +141,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.MachineNameGet().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="MachineNameGet" alias="MachineNameGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_MachineName</Name>
@@ -104,6 +160,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.ProcessorCountGet().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="ProcessorCountGet" alias="ProcessorCountGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_ProcessorCount</Name>
@@ -116,6 +179,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.SystemPageSizeGet().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="SystemPageSizeGet" alias="SystemPageSizeGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_SystemPageSize</Name>
@@ -128,6 +198,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.NewLineGet().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="NewLineGet" alias="NewLineGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_NewLine</Name>
@@ -140,6 +217,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.VersionGet().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="VersionGet" alias="VersionGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_Version</Name>
@@ -152,6 +236,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.WorkingSetGet().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="WorkingSetGet" alias="WorkingSetGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_WorkingSet</Name>
@@ -164,6 +255,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.OSVersionGet().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="OSVersionGet" alias="OSVersionGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_OSVersion</Name>
@@ -176,6 +274,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.StackTraceGet().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="StackTraceGet" alias="StackTraceGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_StackTrace</Name>
@@ -188,6 +293,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.Is64BitProcessGet().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="Is64BitProcessGet" alias="Is64BitProcessGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_Is64BitProcess</Name>
@@ -200,6 +312,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.Is64BitOperatingSystemGet().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="Is64BitOperatingSystemGet" alias="Is64BitOperatingSystemGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_Is64BitOperatingSystem</Name>
@@ -212,6 +331,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.HasShutdownStartedGet().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="HasShutdownStartedGet" alias="HasShutdownStartedGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_HasShutdownStarted</Name>
@@ -224,6 +350,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.UserNameGet().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="UserNameGet" alias="UserNameGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_UserName</Name>
@@ -236,6 +369,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.UserInteractiveGet().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="UserInteractiveGet" alias="UserInteractiveGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_UserInteractive</Name>
@@ -248,6 +388,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.UserDomainNameGet().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="UserDomainNameGet" alias="UserDomainNameGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_UserDomainName</Name>
@@ -260,6 +407,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.CurrentManagedThreadIdGet().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="CurrentManagedThreadIdGet" alias="CurrentManagedThreadIdGet">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">get_CurrentManagedThreadId</Name>
@@ -272,6 +426,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.ExitInt32().Body = 
+              exitCode => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="ExitInt32" alias="ExitInt32">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">Exit</Name>
@@ -284,6 +445,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.FailFastString().Body = 
+              message => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="FailFastString" alias="FailFastString">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">FailFast</Name>
@@ -296,6 +464,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.FailFastStringException().Body = 
+              (message, exception) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="FailFastStringException" alias="FailFastStringException">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">FailFast</Name>
@@ -308,6 +483,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.ExpandEnvironmentVariablesString().Body = 
+              name => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="ExpandEnvironmentVariablesString" alias="ExpandEnvironmentVariablesString">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">ExpandEnvironmentVariables</Name>
@@ -320,6 +502,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.GetCommandLineArgs().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="GetCommandLineArgs" alias="GetCommandLineArgs">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">GetCommandLineArgs</Name>
@@ -332,6 +521,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.GetEnvironmentVariableString().Body = 
+              variable => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="GetEnvironmentVariableString" alias="GetEnvironmentVariableString">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">GetEnvironmentVariable</Name>
@@ -344,6 +540,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.GetEnvironmentVariableStringEnvironmentVariableTarget().Body = 
+              (variable, target) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="GetEnvironmentVariableStringEnvironmentVariableTarget" alias="GetEnvironmentVariableStringEnvironmentVariableTarget">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">GetEnvironmentVariable</Name>
@@ -356,6 +559,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.GetEnvironmentVariables().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="GetEnvironmentVariables" alias="GetEnvironmentVariables">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">GetEnvironmentVariables</Name>
@@ -368,6 +578,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.GetEnvironmentVariablesEnvironmentVariableTarget().Body = 
+              target => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="GetEnvironmentVariablesEnvironmentVariableTarget" alias="GetEnvironmentVariablesEnvironmentVariableTarget">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">GetEnvironmentVariables</Name>
@@ -380,6 +597,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.SetEnvironmentVariableStringString().Body = 
+              (variable, value) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="SetEnvironmentVariableStringString" alias="SetEnvironmentVariableStringString">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">SetEnvironmentVariable</Name>
@@ -392,6 +616,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.SetEnvironmentVariableStringStringEnvironmentVariableTarget().Body = 
+              (variable, value, target) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="SetEnvironmentVariableStringStringEnvironmentVariableTarget" alias="SetEnvironmentVariableStringStringEnvironmentVariableTarget">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">SetEnvironmentVariable</Name>
@@ -404,6 +635,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.GetLogicalDrives().Body = 
+              () => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="GetLogicalDrives" alias="GetLogicalDrives">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">GetLogicalDrives</Name>
@@ -416,6 +654,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.GetFolderPathEnvironmentSpecialFolder().Body = 
+              folder => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="GetFolderPathEnvironmentSpecialFolder" alias="GetFolderPathEnvironmentSpecialFolder">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">GetFolderPath</Name>
@@ -428,6 +673,13 @@
         </RuntimeMethodInfo>
       </add>
 
+      <!-- 
+          PEnvironment.GetFolderPathEnvironmentSpecialFolderEnvironmentSpecialFolderOption().Body = 
+              (folder, option) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="GetFolderPathEnvironmentSpecialFolderEnvironmentSpecialFolderOption" alias="GetFolderPathEnvironmentSpecialFolderEnvironmentSpecialFolderOption">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">GetFolderPath</Name>
@@ -441,7 +693,6 @@
       </add>
 
     </stubs>
-
   </prig>
 
 </configuration>

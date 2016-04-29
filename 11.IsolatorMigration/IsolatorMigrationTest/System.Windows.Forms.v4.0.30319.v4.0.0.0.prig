@@ -8,6 +8,13 @@
   <prig>
 
     <stubs>
+      <!-- 
+          PMessageBox.ShowString().Body = 
+              text => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="ShowString" alias="ShowString">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">Show</Name>
@@ -21,7 +28,6 @@
       </add>
 
     </stubs>
-
   </prig>
 
 </configuration>

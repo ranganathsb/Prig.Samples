@@ -8,6 +8,13 @@
   <prig>
 
     <stubs>
+      <!-- 
+          PFoo.GetThreadTimesIntPtrInt64RefInt64RefInt64RefInt64Ref().Body = 
+              (System.IntPtr hThread, out System.Int64 lpCreationTime, out System.Int64 lpExitTime, out System.Int64 lpKernelTime, out System.Int64 lpUserTime) => 
+              {   
+                  throw new NotImplementedException();
+              };
+      -->
       <add name="GetThreadTimesIntPtrInt64RefInt64RefInt64RefInt64Ref" alias="GetThreadTimesIntPtrInt64RefInt64RefInt64RefInt64Ref">
         <RuntimeMethodInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://www.w3.org/2001/XMLSchema" z:Id="1" z:FactoryType="MemberInfoSerializationHolder" z:Type="System.Reflection.MemberInfoSerializationHolder" z:Assembly="0" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/System.Reflection">
           <Name z:Id="2" z:Type="System.String" z:Assembly="0" xmlns="">GetThreadTimes</Name>
@@ -21,7 +28,6 @@
       </add>
 
     </stubs>
-
   </prig>
 
 </configuration>
