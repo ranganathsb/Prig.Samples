@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreeOrMoreOutRef", "ThreeOrMoreOutRef\ThreeOrMoreOutRef.csproj", "{90C4C826-E6DB-41D5-BD91-7876D0C46E5D}"
 EndProject
@@ -10,11 +10,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UntestableLibrary", "UntestableLibrary\UntestableLibrary.csproj", "{71E849C9-E10E-454F-80F7-C7AE6888B5E1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDelegates", "MyDelegates\MyDelegates.csproj", "{EB232A3F-4C14-4A92-BD78-4DD93DF0086B}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C891D313-7A39-4799-A5E0-756C1DCC2FF2}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\packages.config = .nuget\packages.config
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalMockingMigration", "FinalMockingMigration\FinalMockingMigration.csproj", "{6BF453D1-6AF3-43C4-90E9-CDA1518C55B6}"
 EndProject
@@ -14,11 +14,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticMockingMigration", "StaticMockingMigration\StaticMockingMigration.csproj", "{1D36752F-8B2F-4B03-BE97-0DE86AAF0AFA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticMockingMigrationTest", "StaticMockingMigrationTest\StaticMockingMigrationTest.csproj", "{DE6E364C-7541-4D28-B545-745508EAB8F5}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F74F9AE6-B0D7-4F24-8DBF-1A4F5D0CFCDF}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\packages.config = .nuget\packages.config
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
