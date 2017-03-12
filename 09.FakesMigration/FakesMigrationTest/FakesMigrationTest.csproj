@@ -94,7 +94,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestBase.cs" />
     <Compile Include="WebServiceClientTest.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +103,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="System.v4.0.30319.v4.0.0.0.prig" />
   </ItemGroup>
