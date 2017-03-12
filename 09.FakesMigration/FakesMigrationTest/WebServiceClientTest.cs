@@ -10,7 +10,7 @@ using Urasandesu.Prig.Framework;
 namespace FakesMigrationTest
 {
     [TestFixture]
-    public class WebServiceClientTest : TestBase
+    public class WebServiceClientTest
     {
         [Test]
         public void TestThatServiceReturnsAForbiddenStatuscode()
